@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//WebContent/admin/admin.jsp=UTF-8
+encoding//WebContent/admin/diaryGroup.jsp=UTF-8
+encoding//WebContent/admin/diary_list.jsp=UTF-8
+encoding//WebContent/admin/editDiary.jsp=UTF-8
+encoding//WebContent/admin/photoGroup.jsp=UTF-8
+encoding//WebContent/admin/photo_list.jsp=UTF-8
+encoding//WebContent/admin/upload_photo.jsp=UTF-8
+encoding//WebContent/admin/writeDiary.jsp=UTF-8
+encoding//WebContent/diary.jsp=UTF-8
+encoding//WebContent/diary_list.jsp=UTF-8
+encoding//WebContent/gallery.jsp=UTF-8
+encoding//WebContent/index.jsp=UTF-8
+encoding//WebContent/login.jsp=UTF-8
+encoding//WebContent/photo_list.jsp=UTF-8
+encoding//WebContent/register.jsp=UTF-8
