@@ -19,18 +19,18 @@
   
   <body>
    <img src="images/logo_login.png" style="margin-top:-50px"/>
-<form name="loginform" id="loginform" action="admin/admin.jsp" method="post"><div align="center">
+<form name="loginform" id="loginform" action="doLogin.jsp" method="post"><div align="center">
 <table style="background:#E7DFDE; margin-top:-100px" width="350px" height="200" align="center">
   <tr valign="bottom">
     <td width="88" align="left"><div class="lbl">用户名</div></td>
 	</tr>
 	<tr>
-    <td  align="left" valign="top"><input name="uname" id="uname" class="txt" style="width:325px" size="20" tabindex="10" type="text" /></td>
+    <td  align="left" valign="top"><input type="text" name="uname" id="uname" class="txt" style="width:325px" size="20" tabindex="10" /></td>
   </tr>
   <tr valign="bottom">
     <td align="left"><div class="lbl">密&nbsp;&nbsp;&nbsp;&nbsp;码</div></td></tr>
 	<tr>
-    <td  align="left" valign="top"><input name="upwd" id="user_login" class="txt"  style="width:325px" size="20" tabindex="10" type="password" />    </td>
+    <td  align="left" valign="top"><input type="password" name="upwd" id="user_login" class="txt"  style="width:325px" size="20" tabindex="10" />    </td>
   </tr>
     <tr valign="middle">
     <td>
