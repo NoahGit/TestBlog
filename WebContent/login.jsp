@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 <link rel="stylesheet" type="text/css" href="css/login_style.css">
+
   </head>
   
   <body>
@@ -30,8 +31,21 @@
   <tr valign="bottom">
     <td align="left"><div class="lbl">密&nbsp;&nbsp;&nbsp;&nbsp;码</div></td></tr>
 	<tr>
-    <td  align="left" valign="top"><input type="password" name="upwd" id="user_login" class="txt"  style="width:325px" size="20" tabindex="10" />    </td>
+    <td  align="left" valign="top">
+    	<input type="password" name="upwd" id="user_login" class="txt"  style="width:325px" size="20" tabindex="10" />
+    </td>
   </tr>
+  
+  <tr valign="bottom">
+    <td align="left"><div class="lbl">验证码</div></td></tr>
+	<tr>
+    <td  align="left" valign="top">
+    	<input type="text" name="vcode" id="vcode" class="txt"  style="width:100px" size="20" tabindex="10" />
+    	<img src="VerifyCode.jsp" id="vc"/>
+  		<a href="#" onclick="document.getElementById('vc').src='VerifyCode.jsp?r='+Math.random();return false;">看不清，换一张</a>
+    </td>
+  </tr>
+
     <tr valign="middle">
     <td>
 	<DIV align="center">

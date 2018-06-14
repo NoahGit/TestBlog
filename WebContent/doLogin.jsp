@@ -13,9 +13,13 @@
 	<%
 		String name = request.getParameter("uname");
 		String pwd = request.getParameter("upwd");
+		
+		String vcode = request.getParameter("vcode");
+		String rand = (String)session.getAttribute("rand");
+		
 		UsersBiz ub = new UsersBizImpl();
 		Users user = ub.login(name,pwd);
-		if(user!=null){
+		if(user!=null&&vcode.equals(rand)){
 			session.setAttribute("name", name);
 			session.setAttribute("pwd", pwd);
 			request.getRequestDispatcher("admin/admin.jsp").forward(request, response);
