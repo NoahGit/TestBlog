@@ -22,6 +22,9 @@
 
 	window.status="ray's domain";
 </script>
+
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
   </head>
   
   <body>
@@ -86,7 +89,7 @@
 					<div align="center">	<br/>鲜花:0朵&nbsp;&nbsp;<a  href="javascript:void(0);" style="text-decoration:underline; color:#000000; font-size:13px">送鲜花</a>	&nbsp;&nbsp;&nbsp;&nbsp; 便便:0坨&nbsp;&nbsp;<a  href="javascript:void(0);" style="text-decoration:underline; color:#000000;font-size:13px">扔便便</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);"  style="text-decoration:underline; color:#000000;font-size:13px">举报该日记</a> <br/><br/> </div>
 					
 					<div align="center"><div align="left" style="font-size:13px;"><strong>发表评论</strong></div>
-			<textarea id="comment_info_memo" name="comment_info_memo"  style="width:580px; height:40px;"></textarea>
+			<textarea id="comment_info_memo" name="comment_info_memo"  style="width:580px; height:40px;" class="ckeditor" ></textarea>
 			<div align="left"> <input id="pub_comment_submit" type="button" name="SubmitComment" value="提交评论" onClick="alert('暂未开放，敬请期待')" /></div>
 			</div><br/>
 			<div align="center"><div align="left" style="font-size:13px;"><strong>查看评论</strong></div>
@@ -107,6 +110,7 @@
 		&copy; Easy Blog. 版权所有.  <a href="mailto:in.think@163.com">Black&White</a>设计.</p>
 	
 	</div>
+</div>
 </div>
   </body>
 </html>

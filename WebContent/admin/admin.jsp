@@ -13,6 +13,11 @@
 </head>
 
 <body>
+<% 
+request.setCharacterEncoding("utf-8");
+response.setCharacterEncoding("utf-8");
+
+%>
 <div style="width:100%;  background-color:#D6D4CE;text-align:center"><table width="800px" align="center" style="margin-bottom:3px;">
 	<tr>
 		<td align="left"><a href="admin.jsp">[管理中心]</a></td>
@@ -33,7 +38,7 @@
 				<table width="100%" height="100%"  bgcolor="#D2E7F0" cellspacing="3">
 					<tr >
 						<td width="100%" height="30px" class="lefttd" onmouseover="this.className='lefttdover'" onmouseout="this.className='lefttd'">
-							<a href="diary_list.jsp">个人日记</a>
+							<a href="doDiary_list_list.jsp">个人日记</a>
 						</td>
 					</tr>
 					<tr>
@@ -84,8 +89,8 @@
 		 <a href="#">Disclaimer</a> |
 		 <a href="#">CSS</a> and <a href="#">XHTML</a><br/>
 		&copy; Easy Blog. 版权所有.  <a href="mailto:in.think@163.com">Black&White</a>设计.</p>
-	<%=session.getAttribute("name") %>
-	<%=session.getAttribute("pwd") %>
+	
+	
 	</div>
 </div>
 </body>

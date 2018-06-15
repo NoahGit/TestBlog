@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <%@ include file="/checkUser.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -24,6 +26,11 @@
   </head>
   
   <body>
+  <% 
+request.setCharacterEncoding("utf-8");
+response.setCharacterEncoding("utf-8");
+
+%>
    <div style="width:100%; text-align:center"><table width="800px" align="center" style="margin-bottom:3px;">
 	<tr>
 		
@@ -56,10 +63,20 @@
 			<div class="left">
 				<h3>我的日记</h3>
 				<div  style="text-align:left">
-					<p><img src="images/Folder.png"/><strong><a href="diary_list2.jsp"style="color:#000000">个人日记</a></strong></p>
-					<p><img src="images/Folder-Closed.png"/><a href="diary_list2.jsp"style="color:#000000">个人文章</a></p>
-					<p><img src="images/Folder-Closed.png"/><a href="diary_list2.jsp"style="color:#000000">软件积累</a></p>
-					<p><img src="images/Folder-Closed.png"/><a href="diary_list2.jsp" style="color:#000000">网络文章</a></p>
+					
+					
+					<c:forEach var="ld" items="${list_DiaryGroup}" >
+						<p><img src="images/Folder-Closed.png"/><a href="diary_list2.jsp"style="color:#000000">${ld.dgName }</a></p>
+					</c:forEach>
+					
+					
+					
+					<form action="doDiary_list.jsp" name="diary_list_form" id="diary_list_form" method="post">
+						<input type="text" name="diary_list_title" id="diary_list_title" size="10">
+						<input type="submit" name="diary_list_submit" id="diary_list_submit" value="添加日志分类">
+					</form>
+					
+					
 				</div>
 		
 				<h3>日记评论</h3>
@@ -110,6 +127,5 @@
 		&copy; Easy Blog. 版权所有.  <a href="mailto:in.think@163.com">Black&White</a>设计.</p>
 	
 	</div>
-</div>
   </body>
 </html>

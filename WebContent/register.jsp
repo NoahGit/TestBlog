@@ -31,12 +31,12 @@
   <tr valign="bottom">
     <td align="left"><div class="lbl"><div style="color:#FF0000; display:inline">*</div>密码</div></td></tr>
 	<tr>
-    <td  align="left" valign="top"><input type="password" name="repwd" id="repwd" class="txt"  style="width:325px" size="20" tabindex="10" type="password" />    </td>
+    <td  align="left" valign="top"><input type="password" name="repwd" id="repwd" class="txt"  style="width:325px" size="20" tabindex="10" />    </td>
   </tr>
    <tr valign="bottom">
     <td align="left"><div class="lbl"><div style="color:#FF0000; display:inline">*</div>确认密码</div></td></tr>
 	<tr>
-    <td  align="left" valign="top"><input type="password" name="repwd2" id="repwd2" class="txt"  style="width:325px" size="20" tabindex="10" type="password" />    </td>
+    <td  align="left" valign="top"><input type="password" name="repwd2" id="repwd2" class="txt"  style="width:325px" size="20" tabindex="10" />    </td>
   </tr>
     <tr valign="bottom">
     <td align="left"><div class="lbl">个性签名</div></td></tr>

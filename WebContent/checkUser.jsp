@@ -1,5 +1,5 @@
 <%
-	if(session.getAttribute("name")==null){
+	if(session.getAttribute("user")==null){
 		response.sendRedirect("/TestBlog/login.jsp");
 	}
 %>

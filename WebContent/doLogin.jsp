@@ -20,8 +20,9 @@
 		UsersBiz ub = new UsersBizImpl();
 		Users user = ub.login(name,pwd);
 		if(user!=null&&vcode.equals(rand)){
-			session.setAttribute("name", name);
-			session.setAttribute("pwd", pwd);
+			session.setAttribute("user", user);
+			//session.setAttribute("userName", name);
+			//session.setAttribute("userPwd", pwd);
 			request.getRequestDispatcher("admin/admin.jsp").forward(request, response);
 		}else{
 			response.sendRedirect("login.jsp");
