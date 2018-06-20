@@ -38,7 +38,7 @@ response.setCharacterEncoding("utf-8");
 				<table width="100%" height="100%"  bgcolor="#D2E7F0" cellspacing="3">
 					<tr >
 						<td width="100%" height="30px" class="lefttd" onmouseover="this.className='lefttdover'" onmouseout="this.className='lefttd'">
-							<a href="doDiary_list_list.jsp">个人日记</a>
+							<a href="DoDiary_list_list">个人日记</a>
 						</td>
 					</tr>
 					<tr>

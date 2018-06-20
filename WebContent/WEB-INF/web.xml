@@ -14,7 +14,51 @@
      <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+
 <servlet>
+	<servlet-name>DoLogin</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoLogin</servlet-name>
+	<url-pattern>/DoLogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DoRegister</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoRegister</servlet-name>
+	<url-pattern>/DoRegister</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DoDiary_list</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoDiary_list</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoDiary_list</servlet-name>
+	<url-pattern>/DoDiary_list</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DoDiary_list_list</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoDiary_list_list</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoDiary_list_list</servlet-name>
+	<url-pattern>/DoDiary_list_list</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+<!-- <servlet>
 	<servlet-name>index</servlet-name>
 	<jsp-file>/index.jsp</jsp-file>
 	<init-param>
@@ -26,5 +70,10 @@
 <servlet-mapping>
 	<servlet-name>index</servlet-name>
 	<url-pattern>/test</url-pattern>
-</servlet-mapping>
+</servlet-mapping> -->
+
+
+
+
+
 </web-app>

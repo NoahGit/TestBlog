@@ -71,7 +71,7 @@ response.setCharacterEncoding("utf-8");
 					
 					
 					
-					<form action="doDiary_list.jsp" name="diary_list_form" id="diary_list_form" method="post">
+					<form action="DoDiary_list" name="diary_list_form" id="diary_list_form" method="post">
 						<input type="text" name="diary_list_title" id="diary_list_title" size="10">
 						<input type="submit" name="diary_list_submit" id="diary_list_submit" value="添加日志分类">
 					</form>

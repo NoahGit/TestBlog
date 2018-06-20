@@ -269,7 +269,7 @@
                  <a href="../admin/diary_list.jsp?uid=1&groupid=1&pageNo=2" class="pagebtn">下一页&gt;&gt;</a> 
                  跳到<input id="toPage" type="text" style="width: 30px;" />页
                  <input type="button" value="GO" class="pagebtn" onClick="window.location.href='diary_list.jsp?uid=1&groupid=1&pageNo='+toPage.value"/>
-                 </div></td>
+                 </td>
 					</tr>
 				</table>
 				</td>

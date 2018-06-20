@@ -20,7 +20,7 @@
   
   <body>
  <img src="images/log_reg.png" style="margin-top:-50px"/>
-<form name="loginform" id="loginform" action="doRegister.jsp" method="post"><div align="center">
+<form name="loginform" id="loginform" action="DoRegister" method="post"><div align="center">
 <table style="background:#E7DFDE; margin-top:-100px" width="350px" height="200" align="center">
   <tr valign="bottom">
     <td width="200px" align="left"><div class="lbl"><div style="color:#FF0000; display:inline">*</div>用户名</div></td>
