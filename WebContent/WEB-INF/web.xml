@@ -51,9 +51,23 @@
 	<url-pattern>/DoDiary_list_list</url-pattern>
 </servlet-mapping>
 
+<servlet>
+	<servlet-name>DoInvalidate_session</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoInvalidate_session</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoInvalidate_session</servlet-name>
+	<url-pattern>/DoInvalidate_session</url-pattern>
+</servlet-mapping>
 
-
-
+<servlet>
+	<servlet-name>DoDiary_list2</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoDiary_list2</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoDiary_list2</servlet-name>
+	<url-pattern>/DoDiary_list2</url-pattern>
+</servlet-mapping>
 
 
 

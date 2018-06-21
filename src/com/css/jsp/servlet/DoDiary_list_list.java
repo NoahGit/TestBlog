@@ -35,7 +35,7 @@ public class DoDiary_list_list extends HttpServlet{
 			session.setAttribute("list_DiaryGroup", list_DiaryGroup);
 			request.getRequestDispatcher("diary_list.jsp").forward(request, response);
 		}else{
-			response.sendRedirect("admin/admin.jsp");
+			response.sendRedirect("diary_list.jsp");
 		}
 	}
 }

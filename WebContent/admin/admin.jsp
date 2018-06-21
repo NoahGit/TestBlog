@@ -21,7 +21,7 @@ response.setCharacterEncoding("utf-8");
 <div style="width:100%;  background-color:#D6D4CE;text-align:center"><table width="800px" align="center" style="margin-bottom:3px;">
 	<tr>
 		<td align="left"><a href="admin.jsp">[管理中心]</a></td>
-		<td align="right"><a href="index.jsp" target="_blank">[我的主页]</a>	<a href="login.jsp">[退出]</a></td>
+		<td align="right"><a href="index.jsp" target="_blank">[我的主页]</a>[欢迎${user.userName }]	<a href="login.jsp">[退出]</a></td>
 	</tr>
 </table></div>
 <div id="Container">

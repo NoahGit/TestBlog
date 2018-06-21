@@ -63,27 +63,7 @@ response.setCharacterEncoding("utf-8");
 			<div class="left">
 				<h3>我的日记</h3>
 				<div  style="text-align:left">
-					
-					
-					
-					
-					<form action="DoDiary_list2" name="DoDiary_list2" id="DoDiary_list2" method="post">
-					
-					<c:forEach var="ld" items="${list_DiaryGroup}" >
-						<p><img src="images/Folder-Closed.png"/><input type="submit" name="ldDgName" id="ldDgName" value=${ld.dgName }></p>
-					</c:forEach>
-					
-					</form>
-					
-					
-					
-					
-					<form action="DoDiary_list" name="diary_list_form" id="diary_list_form" method="post">
-						<input type="text" name="diary_list_title" id="diary_list_title" size="10">
-						<input type="submit" name="diary_list_submit" id="diary_list_submit" value="添加日志分类">
-					</form>
-					
-					
+					<h2>${ldDgName}</h2>
 				</div>
 		
 				<h3>日记评论</h3>
@@ -132,7 +112,7 @@ response.setCharacterEncoding("utf-8");
 		 <a href="#">Disclaimer</a> |
 		 <a href="#">CSS</a> and <a href="#">XHTML</a><br/>
 		&copy; Easy Blog. 版权所有.  <a href="mailto:in.think@163.com">Black&White</a>设计.</p>
-	${iy }
+	
 	</div>
   </body>
 </html>

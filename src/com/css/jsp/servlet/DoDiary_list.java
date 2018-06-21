@@ -41,7 +41,5 @@ public class DoDiary_list extends HttpServlet{
 				e.printStackTrace();
 			}
 		}
-		
-		
 	}
 }
