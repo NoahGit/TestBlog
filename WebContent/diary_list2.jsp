@@ -63,7 +63,7 @@ response.setCharacterEncoding("utf-8");
 			<div class="left">
 				<h3>我的日记</h3>
 				<div  style="text-align:left">
-					<h2>${ldDgName}</h2>
+					<h2>${ldDgName}</h2>${ldDgId }
 				</div>
 		
 				<h3>日记评论</h3>
@@ -76,22 +76,27 @@ response.setCharacterEncoding("utf-8");
 			<div id="leftInfo" style="text-align:left">
 			<h3>当前分类：个人日记</h3>
 			<div class="content">
-			<p><u><a class="title" href="diary.jsp">艾语录</a></u>
-					<a>日期：2011-04-14 13:23</a></p>
-					<p><u><a class="title" href="diary.jsp">战争保卫片</a></u>
-					<a>日期：2011-04-14 13:23</a></p>
-			<p><u><a class="title" href="diary.jsp">溃散在薄雾中</a></u>
-					<a>日期：2011-04-14 13:23</a></p>
-					<p><u><a class="title" href="diary.jsp">时况无辜</a></u>
-					<a>日期：2011-02-27 12:42</a></p>
-					<p><u><a class="title" href="diary.jsp">全城堵死</a></u>
-					<a>日期：2010-11-03 12:53</a></p>
-                    <p><u><a class="title" href="diary.jsp">呐喊</a></u>
-					<a>日期：2011-04-14 13:23</a></p>
-                    <p><u><a class="title" href="diary.jsp">About Android</a></u>
-					<a>日期：2010-10-28 13:09</a></p>
-                    <p><u><a class="title" href="diary.jsp">跟着自己，始终坚持，你知道</a></u>
-					<a>日期：2010-10-13 18:22</a></p>
+			
+			<form action="DoDiary" name="DoDiary" id="DoDiary" method="post">
+			<c:forEach var="dy" items="${list_diary}">
+				<p><u>
+				<input type="submit" name="diaryTitle" id="diaryTitle" class="title" value=${dy.diaryTitle }>
+				</u>
+					<a>日期：${dy.diaryPublishTime }</a></p>
+					
+			</c:forEach>
+			</form>
+			
+			
+			
+			
+				
+				
+<%-- <c:forEach var="ld" items="${list_DiaryGroup}" >
+		<p><img src="images/Folder-Closed.png"/><input type="submit" name="ldDgName" id="ldDgName" value=${ld.dgName }></p>
+	</c:forEach> --%>
+				
+					
 					
 			</div>
 			<div class="page">

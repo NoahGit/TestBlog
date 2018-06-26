@@ -70,7 +70,9 @@ response.setCharacterEncoding("utf-8");
 					<form action="DoDiary_list2" name="DoDiary_list2" id="DoDiary_list2" method="post">
 					
 					<c:forEach var="ld" items="${list_DiaryGroup}" >
-						<p><img src="images/Folder-Closed.png"/><input type="submit" name="ldDgName" id="ldDgName" value=${ld.dgName }></p>
+						<p><img src="images/Folder-Closed.png"/>
+						<input type="hidden" name="ldDgId" id="ldDgId" value=${ld.dgId }>
+						<input type="submit" name="ldDgName" id="ldDgName" value=${ld.dgName }></p>
 					</c:forEach>
 					
 					</form>
@@ -96,7 +98,7 @@ response.setCharacterEncoding("utf-8");
 			<div id="leftInfo" style="text-align:left">
 			<h3>当前分类：个人日记</h3>
 			<div class="content">
-			<p><u><a class="title" href="diary.jsp">艾语录</a></u>
+			<!-- <p><u><a class="title" href="diary.jsp">艾语录</a></u>
 					<a>日期：2011-04-14 13:23</a></p>
 					<p><u><a class="title" href="diary.jsp">战争保卫片</a></u>
 					<a>日期：2011-04-14 13:23</a></p>
@@ -111,7 +113,7 @@ response.setCharacterEncoding("utf-8");
                     <p><u><a class="title" href="diary.jsp">About Android</a></u>
 					<a>日期：2010-10-28 13:09</a></p>
                     <p><u><a class="title" href="diary.jsp">跟着自己，始终坚持，你知道</a></u>
-					<a>日期：2010-10-13 18:22</a></p>
+					<a>日期：2010-10-13 18:22</a></p> -->
 					
 			</div>
 			<div class="page">

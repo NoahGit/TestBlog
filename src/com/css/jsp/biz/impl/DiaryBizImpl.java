@@ -32,4 +32,8 @@ public class DiaryBizImpl implements DiaryBiz {
 	public int getCount(int dgid) {
 		return ddi.getCount(dgid);
 	}
+	@Override
+	public Diary findByTitle(String diaryTitle) {
+		return ddi.findByTitle(diaryTitle);
+	}
 }

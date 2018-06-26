@@ -13,5 +13,6 @@ public interface DiaryDAO {
 	public List<Diary> findByPageForAdmin(int groupid,int page); //根据日志分类分页查询用户后台的日志列表，7条
 	public int findCountByGroupid(int groupid);   //根据日志类别id查询该类别的日志总数
 	public Diary findById(int id);   //通过id查询日志详细信息
+	public Diary findByTitle(String diaryTitle);
 	public int getCount(int dgid);   //获取日志总行数
 }

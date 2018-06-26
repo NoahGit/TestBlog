@@ -137,5 +137,22 @@ public class DiaryDAOImpl implements DiaryDAO {
 		}
 		return count;
 	}
+
+	@Override
+	public Diary findByTitle(String diaryTitle) {
+		Diary diary=null;
+		String sql="select * from diary where diary_title="+"'"+diaryTitle+"'";
+		ResultSet rs=bd.executeQuery(sql, null);
+		try {
+			while(rs.next()){
+				diary=new Diary(rs.getInt("diary_id"),rs.getInt("dg_id"),rs.getString("diary_title"),rs.getString("diary_content"),rs.getString("diary_publishtime"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			bd.closeAll();
+		}
+		return diary;
+	}
 	
 }

@@ -12,4 +12,5 @@ public interface DiaryBiz {
 	public int delete(int id);   //删除日志
 	public Diary findById(int id);   //通过id查询日志详细信息
 	public int getCount(int dgid);   //获取日志总行数
+	public Diary findByTitle(String diaryTitle);
 }

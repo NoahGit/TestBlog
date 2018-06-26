@@ -69,8 +69,14 @@
 	<url-pattern>/DoDiary_list2</url-pattern>
 </servlet-mapping>
 
-
-
+<servlet>
+	<servlet-name>DoDiary</servlet-name>
+	<servlet-class>com.css.jsp.servlet.DoDiary</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DoDiary</servlet-name>
+	<url-pattern>/DoDiary</url-pattern>
+</servlet-mapping>
 
 <!-- <servlet>
 	<servlet-name>index</servlet-name>
